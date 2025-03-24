@@ -5,7 +5,7 @@ import pyperclip
 def paste_plain_text():
     time.sleep(0.05)
     text = pyperclip.paste()
-    keyboard.write(text)  # 使用keyboard模拟键盘输入实现粘贴
+    keyboard.write(text)
     print("已粘贴纯文本:", text)
 
 def main():
