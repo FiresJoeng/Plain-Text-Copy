@@ -2,11 +2,13 @@ import time
 import keyboard
 import pyperclip
 
+
 def paste_plain_text():
     time.sleep(0.05)
     text = pyperclip.paste()
     keyboard.write(text)
     print("已粘贴纯文本:", text)
+
 
 def main():
     print("程序已启动。")
@@ -15,6 +17,7 @@ def main():
     keyboard.add_hotkey('ctrl+v', paste_plain_text, suppress=True)
     keyboard.wait('esc')
     print("程序已退出。")
+
 
 if __name__ == '__main__':
     main()
